@@ -1,0 +1,82 @@
+{
+  "home": {
+    "heading": "Revolutioneer je werkproces met <automation>automatisering</automation>",
+    "description": "Acme Corp biedt je de beste automatiseringstools, zodat jij je kunt concentreren op de belangrijke taken en wij de rest voor je regelen.",
+    "cta": "Begin nu",
+    "demo": "Vraag een demo aan",
+    "testimonials": "Wat onze klanten zeggen"
+  },
+  "locale-switcher": {
+    "label": "Change language",
+    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
+  },
+  "pricing": {
+    "heading": "Ontketen de kracht van <automation>automatisering</automation>",
+    "description": "We bieden eenvoudige prijsplannen voor teams van elke grootte.",
+    "pricing": "Geen contracten. Geen verborgen kosten.",
+    "pricingCards": {
+      "monthly": "Maandelijks",
+      "contact": "Neem contact op met verkoop",
+      "talk": "Laten we praten",
+      "start": "Aan de slag",
+      "popular": "🔥 Meest Populair",
+      "starter-subscription": {
+        "title": "Starter",
+        "description": "Begin met de basisfunctionaliteiten"
+      },
+      "professional-subscription": {
+        "title": "Professioneel",
+        "description": "Breng automatisering naar een hoger niveau"
+      },
+      "enterprise-subscription": {
+        "title": "Enterprise",
+        "description": "Samenwerken als nooit tevoren"
+      },
+      "custom": {
+        "title": "Op maat",
+        "description": "Speciaal afgestemd op jouw behoeften"
+      }
+    }
+  },
+  "header": {
+    "features": "Functies",
+    "blog": "Blog",
+    "pricing": "Prijzen",
+    "login": "Inloggen",
+    "signup": "Aanmelden"
+  },
+  "footer": {
+    "description": "Acme Corp is de wereld's meest (beroemde) leverancier van fantasierijke producten voor elke mogelijke behoefte.",
+    "features": {
+      "title": "Functies",
+      "automation": "Automatisering",
+      "collaboration": "Samenwerking",
+      "ai-tools": "AI Tools",
+      "no-code": "No-code Oplossingen",
+      "scheduler": "Planner",
+      "advanced": "Geavanceerd"
+    },
+    "company": {
+      "title": "Bedrijf",
+      "about": "Over ons",
+      "customers": "Klanten",
+      "blog": "Blog",
+      "careers": "Carrières",
+      "brand": "Merk"
+    },
+    "resources": {
+      "title": "Hulpbronnen",
+      "terms": "Voorwaarden",
+      "privacy": "Privacy",
+      "dpa": "DPA",
+      "reports": "Rapporten"
+    },
+    "socials": {
+      "title": "Sociale media",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

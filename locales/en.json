@@ -1,0 +1,82 @@
+{
+  "home": {
+    "heading": "Revolutionize your workflow with <automation>automation</automation>",
+    "description": "Acme Corp provides you with the best-in-class automation tools so that you can focus on the important tasks and let us handle the rest for you.",
+    "cta": "Start Now",
+    "demo": "Get a Demo",
+    "testimonials": "What our customers have to say"
+  },
+  "locale-switcher": {
+    "label": "Change language",
+    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
+  },
+  "pricing": {
+    "heading": "Unleash the power of <automation>automation</automation>",
+    "description": "We offer straightforward pricing plans for teams of all sizes.",
+    "pricing": "No contracts. No hidden fees.",
+    "pricingCards": {
+      "monthly": "Monthly",
+      "contact": "Contact Sales",
+      "talk": "Let's Talk",
+      "start": "Get Started",
+      "popular": "🔥 Most Popular",
+      "starter-subscription": {
+        "title": "Starter",
+        "description": "Get started with the essentials"
+      },
+      "professional-subscription": {
+        "title": "Professional",
+        "description": "Bring automation to the next level"
+      },
+      "enterprise-subscription": {
+        "title": "Enterprise",
+        "description": "Collaborate like never before"
+      },
+      "custom": {
+        "title": "Custom",
+        "description": "Tailor-made for your needs"
+      }
+    }
+  },
+  "header": {
+    "features": "Features",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "footer": {
+    "description": "Acme Corp is the world's most (in)famous supplier of wildly imaginative products for every possible need.",
+    "features": {
+      "title": "Features",
+      "automation": "Automation",
+      "collaboration": "Collaboration",
+      "ai-tools": "AI Tools",
+      "no-code": "No-code Solutions",
+      "scheduler": "Scheduler",
+      "advanced": "Advanced"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "customers": "Customers",
+      "blog": "Blog",
+      "careers": "Careers",
+      "brand": "Brand"
+    },
+    "resources": {
+      "title": "Resources",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "dpa": "DPA",
+      "reports": "Reports"
+    },
+    "socials": {
+      "title": "Socials",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

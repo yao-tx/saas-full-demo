@@ -1,0 +1,82 @@
+{
+  "home": {
+    "heading": "通过<automation>自动化</automation>彻底革新你的工作流程",
+    "description": "Acme Corp 为您提供一流的自动化工具，让您专注于重要任务，其余的交给我们来处理。",
+    "cta": "立即开始",
+    "demo": "安排演示",
+    "testimonials": "客户评价"
+  },
+  "locale-switcher": {
+    "label": "Change language",
+    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
+  },
+  "pricing": {
+    "heading": "解锁<automation>自动化</automation>的强大力量",
+    "description": "不论团队大小，我们都有简单明了的定价方案。",
+    "pricing": "无需签约，无隐藏费用。",
+    "pricingCards": {
+      "monthly": "每月",
+      "contact": "联系销售",
+      "talk": "让我们聊聊",
+      "start": "立即开始",
+      "popular": "🔥 最受欢迎",
+      "starter-subscription": {
+        "title": "简易版",
+        "description": "从必备功能开始"
+      },
+      "professional-subscription": {
+        "title": "专业版",
+        "description": "将自动化推向新高峰"
+      },
+      "enterprise-subscription": {
+        "title": "企业版",
+        "description": "超越以往的协作"
+      },
+      "custom": {
+        "title": "定制版",
+        "description": "专为您的需求量身定制"
+      }
+    }
+  },
+  "header": {
+    "features": "功能",
+    "blog": "博客",
+    "pricing": "价格",
+    "login": "登录",
+    "signup": "注册"
+  },
+  "footer": {
+    "description": "Acme Corp 是全球最（臭）名昭著的供应商，提供天马行空、满足一切需求的创意产品。",
+    "features": {
+      "title": "功能",
+      "automation": "自动化",
+      "collaboration": "协作",
+      "ai-tools": "人工智能工具",
+      "no-code": "无代码解决方案",
+      "scheduler": "日程安排工具",
+      "advanced": "高级功能"
+    },
+    "company": {
+      "title": "公司",
+      "about": "关于我们",
+      "customers": "顾客",
+      "blog": "博客",
+      "careers": "招聘",
+      "brand": "品牌"
+    },
+    "resources": {
+      "title": "资源",
+      "terms": "条款",
+      "privacy": "隐私",
+      "dpa": "DPA",
+      "reports": "报告"
+    },
+    "socials": {
+      "title": "社交媒体",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "home": {
+    "heading": "<automation>自動化</automation>で、あなたの業務フローを根本から変革",
+    "description": "Acme Corpは、重要な業務に集中できるよう、最先端の自動化ツールで日常のタスクをサポートします。",
+    "cta": "今すぐ始める",
+    "demo": "デモを予約",
+    "testimonials": "お客様の声"
+  },
+  "locale-switcher": {
+    "label": "言語を変更",
+    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {不明}}"
+  },
+  "pricing": {
+    "heading": "<automation>自動化</automation>の力を、今すぐ手に入れよう",
+    "description": "チームの規模を問わず、わかりやすく柔軟な料金プランをご用意しています。",
+    "pricing": "契約不要・追加料金なしで安心",
+    "pricingCards": {
+      "monthly": "月額",
+      "contact": "営業に問い合わせる",
+      "talk": "ご相談はこちら",
+      "start": "今すぐ始める",
+      "popular": "🔥 人気プラン",
+      "starter-subscription": {
+        "title": "スタータープラン",
+        "description": "基本機能からスタート"
+      },
+      "professional-subscription": {
+        "title": "プロフェッショナルプラン",
+        "description": "自動化を次のレベルへ"
+      },
+      "enterprise-subscription": {
+        "title": "エンタープライズプラン",
+        "description": "チーム連携を最大化"
+      },
+      "custom": {
+        "title": "カスタムプラン",
+        "description": "御社のニーズに最適化"
+      }
+    }
+  },
+  "header": {
+    "features": "機能",
+    "blog": "ブログ",
+    "pricing": "料金",
+    "login": "ログイン",
+    "signup": "無料登録"
+  },
+  "footer": {
+    "description": "Acme Corpは、型破りな発想であらゆるニーズに応える、世界的に有名なクリエイティブ・プロバイダーです。",
+    "features": {
+      "title": "機能一覧",
+      "automation": "自動化機能",
+      "collaboration": "チーム連携",
+      "ai-tools": "AIツール",
+      "no-code": "ノーコードソリューション",
+      "scheduler": "スケジューラー",
+      "advanced": "高度な機能"
+    },
+    "company": {
+      "title": "会社情報",
+      "about": "私たちについて",
+      "customers": "導入事例",
+      "blog": "ブログ",
+      "careers": "採用情報",
+      "brand": "ブランドガイド"
+    },
+    "resources": {
+      "title": "リソース",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "dpa": "データ処理契約（DPA）",
+      "reports": "レポート"
+    },
+    "socials": {
+      "title": "SNS",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}
