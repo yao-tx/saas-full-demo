@@ -7,7 +7,7 @@ export default function Pricing() {
   const t = useTranslations("pricing");
 
   return (
-    <FastSpringProvider>
+    <FastSpringProvider storefront="popup">
         <div className="relative flex min-h-svh flex-col">
           <main className="flex flex-1 flex-col">
             <section>

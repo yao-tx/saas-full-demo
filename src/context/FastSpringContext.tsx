@@ -8,27 +8,55 @@ import React, {
   ReactNode,
 } from "react";
 import Script from "next/script";
+import { usePathname } from "next/navigation";
+import type { ProductData } from "@/lib/types";
 
 interface FastSpringContextType {
-  products: any[];
-  data: any;
-  setProducts: (products: any[]) => void;
-  setData: (data: any) => void;
-}
+  products: { [key: string]: ProductData };
+  setProducts: (products: { [key: string]: ProductData }) => void;
+};
 
 const FastSpringContext = createContext<FastSpringContextType | undefined>(undefined);
 
 export const useFastSpring = () => {
   const context = useContext(FastSpringContext);
+
   if (!context) {
     throw new Error("useFastSpring must be used within FastSpringContext");
   }
+
   return context;
 };
 
-export const FastSpringProvider = ({ children }: { children: ReactNode }) => {
-  const [products, setProducts] = useState<any[]>([]);
-  const [data, setData] = useState<any>(null);
+export const FastSpringProvider = ({
+  children,
+  storefront,
+}: {
+  children: ReactNode;
+  storefront: "popup" | "embedded";
+}) => {
+  const pathname = usePathname();
+  const [products, setProducts] = useState<{ [key: string]: ProductData }>({});
+
+  const removeFSPopup = () => {
+    const overlay = document.getElementById("fastspring-overlay");
+    const container = document.getElementById("fastspring-popup-container");
+    const canvas = document.getElementById("fscCanvas");
+    const iframes = document.querySelectorAll("iframe[src*='onfastspring.com']");
+
+    overlay?.remove();
+    container?.remove();
+    canvas?.remove();
+    iframes.forEach(iframe => iframe.remove());
+
+    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
+  };
+
+  const unmountScript = () => {
+    const script = document.getElementById("fsc-api");
+    script?.remove();
+  };
 
   useEffect(() => {
     window.onFSPopupClosed = (orderReference: any) => {
@@ -38,7 +66,6 @@ export const FastSpringProvider = ({ children }: { children: ReactNode }) => {
     };
 
     window.fastSpringCallBack = (fsData: any) => {
-      setData(fsData);
       if (fsData?.groups) {
         const newProducts = fsData.groups
           .filter((group: any) => Array.isArray(group.items))
@@ -54,20 +81,27 @@ export const FastSpringProvider = ({ children }: { children: ReactNode }) => {
         setProducts(newProducts);
       }
     };
-  }, []);
+
+    return () => {
+      removeFSPopup();
+      unmountScript();
+    };
+  }, [pathname]);
+
 
   return (
     <>
       <Script
         id="fsc-api"
-        src="https://sbl.onfastspring.com/sbl/1.0.4/fastspring-builder.min.js"
+        src={process.env.NEXT_PUBLIC_FASTSPRING_JS_URL}
         strategy="lazyOnload"
-        data-storefront="yaodemos.test.onfastspring.com/popup-yaodemos"
+        data-storefront={storefront === "popup" ? process.env.NEXT_PUBLIC_FASTSPRING_POPUP_CHECKOUT : process.env.NEXT_PUBLIC_FASTSPRING_EMBEDDED_CHECKOUT}
         data-data-callback="fastSpringCallBack"
         data-popup-webhook-received="onFSPopupClosed"
+        data-access-key={process.env.NEXT_PUBLIC_FASTSPRING_DATA_ACCESS_KEY}
         data-continuous="true"
       />
-      <FastSpringContext.Provider value={{ products, data, setProducts, setData }}>
+      <FastSpringContext.Provider value={{ products, setProducts }}>
         {children}
       </FastSpringContext.Provider>
     </>

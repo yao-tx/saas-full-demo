@@ -22,19 +22,23 @@
       "popular": "🔥 人気プラン",
       "starter-subscription": {
         "title": "スタータープラン",
-        "description": "基本機能からスタート"
+        "description": "基本機能からスタート",
+        "features": "<li>最大 <bold>3</bold> ユーザー</li><li>1日あたり最大 <bold>1時間</bold> の実行時間</li><li>最大 <bold>10</bold> のワークフロー</li><li><bold>10 GB</bold> のストレージ</li>"
       },
       "professional-subscription": {
         "title": "プロフェッショナルプラン",
-        "description": "自動化を次のレベルへ"
+        "description": "自動化を次のレベルへ",
+        "features": "<li><bold>10+</bold> ユーザー</li><li>1日あたり最大 <bold>6時間</bold> の実行時間</li><li><bold>無制限</bold> のワークフロー</li><li><bold>100 GB</bold> のストレージ</li><li>APIアクセス</li><li><bold>プレミアム</bold> 顧客サポート</li>"
       },
       "enterprise-subscription": {
         "title": "エンタープライズプラン",
-        "description": "チーム連携を最大化"
+        "description": "チーム連携を最大化",
+        "features": "<li><bold>無制限</bold> ユーザー</li><li><bold>無制限</bold> 実行時間</li><li><bold>無制限</bold> ワークフロー</li><li><bold>1 TB</bold> のストレージ</li><li>APIアクセス</li><li><bold>専用</bold> 顧客サポート</li><li><bold>カスタム</bold> ドメイン</li>"
       },
       "custom": {
         "title": "カスタムプラン",
-        "description": "御社のニーズに最適化"
+        "description": "御社のニーズに最適化",
+        "features": "<li><bold>ボリュームベース</bold> の価格設定</li><li><bold>交渉済み</bold> 条件</li><li><bold>カスタム</bold> プラン</li><li><bold>無制限</bold> ストレージ</li><li><bold>すべての</bold> 機能にアクセス</li><li><bold>専用</bold> アカウントマネージャー</li><li>移行サポート</li>"
       }
     }
   },

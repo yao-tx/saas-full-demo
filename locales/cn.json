@@ -22,19 +22,23 @@
       "popular": "🔥 最受欢迎",
       "starter-subscription": {
         "title": "简易版",
-        "description": "从必备功能开始"
+        "description": "从必备功能开始",
+        "features": "<li>最多 <bold>3</bold> 用户</li><li>每天最多 <bold>1小时</bold> 运行时间</li><li>最多 <bold>10</bold> 个工作流</li><li><bold>10 GB</bold> 存储</li>"
       },
       "professional-subscription": {
         "title": "专业版",
-        "description": "将自动化推向新高峰"
+        "description": "将自动化推向新高峰",
+        "features": "<li><bold>10+</bold> 用户</li><li>每天最多 <bold>6小时</bold> 运行时间</li><li><bold>无限制</bold> 工作流</li><li><bold>100 GB</bold> 存储</li><li>API 访问</li><li><bold>高级</bold> 客户支持</li>"
       },
       "enterprise-subscription": {
         "title": "企业版",
-        "description": "超越以往的协作"
+        "description": "超越以往的协作",
+        "features": "<li><bold>无限制</bold> 用户</li><li><bold>无限制</bold> 运行时间</li><li><bold>无限制</bold> 工作流</li><li><bold>1 TB</bold> 存储</li><li>API 访问</li><li><bold>专属</bold> 客户支持</li><li><bold>自定义</bold> 域名</li>"
       },
       "custom": {
         "title": "定制版",
-        "description": "专为您的需求量身定制"
+        "description": "专为您的需求量身定制",
+        "features": "<li><bold>基于容量</bold> 的定价</li><li><bold>协商</bold> 条款</li><li><bold>自定义</bold> 计划</li><li><bold>无限制</bold> 存储</li><li>访问 <bold>所有</bold> 功能</li><li><bold>专属</bold> 客户经理</li><li>迁移帮助</li>"
       }
     }
   },

@@ -22,19 +22,23 @@
       "popular": "🔥 Most Popular",
       "starter-subscription": {
         "title": "Starter",
-        "description": "Get started with the essentials"
+        "description": "Get started with the essentials",
+        "features": "<li>Up to <bold>3</bold> users</li><li>Up to <bold>1 hour</bold> runtime per day</li><li>Up to <bold>10</bold> Workflows</li><li><bold>10 GB</bold> storage</li>"
       },
       "professional-subscription": {
         "title": "Professional",
-        "description": "Bring automation to the next level"
+        "description": "Bring automation to the next level",
+        "features": "<li><bold>10+</bold> users</li><li>Up to <bold>6 hours</bold> runtime per day</li><li><bold>Unlimited</bold> Workflows</li><li><bold>100 GB</bold> storage</li><li>API access</li><li><bold>Premium</bold> customer support</li>"
       },
       "enterprise-subscription": {
         "title": "Enterprise",
-        "description": "Collaborate like never before"
+        "description": "Collaborate like never before",
+        "features": "<li><bold>Unlimited</bold> users</li><li><bold>Unlimited</bold> runtime</li><li><bold>Unlimited</bold> Workflows</li><li><bold>1 TB</bold> storage</li><li>API access</li><li><bold>Dedicated</bold> customer support</li><li><bold>Custom</bold> domain</li>"
       },
       "custom": {
         "title": "Custom",
-        "description": "Tailor-made for your needs"
+        "description": "Tailor-made for your needs",
+        "features": "<li><bold>Volume-based</bold> pricing</li><li><bold>Negotiated</bold> terms</li><li><bold>Custom</bold> plans</li><li><bold>Unlimited</bold> storage</li><li>Access to <bold>all</bold> features</li><li><bold>Dedicated</bold> account manager</li><li>Migration assistance</li>"
       }
     }
   },

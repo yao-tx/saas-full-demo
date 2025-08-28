@@ -34,6 +34,16 @@ const testimonials: {
     "title": "Safety Supervisor, Springfield Nuclear Inc.",
     "testimonial": "Before Acme Corp's solutions, running the power plant was a meltdown waiting to happen.",
   },
+  {
+    "name": "Techno Viking",
+    "title": "Head of Festivals, Deep Bass Logistics",
+    "testimonial": "Thanks to Acme Corp, my workflows run smoother than a Berlin street rave.",
+  },
+  {
+    "name": "Jack Napier AKA Joker",
+    "title": "Founder, Smile Syndicate",
+    "testimonial": "Automation so smooth, it's criminal.",
+  },
 ];
 
 export const Testimonials = () => {

@@ -22,19 +22,23 @@
       "popular": "🔥 Meest Populair",
       "starter-subscription": {
         "title": "Starter",
-        "description": "Begin met de basisfunctionaliteiten"
+        "description": "Begin met de basisfunctionaliteiten",
+        "features": "<li>Tot <bold>3</bold> gebruikers</li><li>Tot <bold>1 uur</bold> runtime per dag</li><li>Tot <bold>10</bold> Workflows</li><li><bold>10 GB</bold> opslag</li>"
       },
       "professional-subscription": {
         "title": "Professioneel",
-        "description": "Breng automatisering naar een hoger niveau"
+        "description": "Breng automatisering naar een hoger niveau",
+        "features": "<li><bold>10+</bold> gebruikers</li><li>Tot <bold>6 uur</bold> runtime per dag</li><li><bold>Onbeperkt</bold> Workflows</li><li><bold>100 GB</bold> opslag</li><li>API-toegang</li><li><bold>Premium</bold> klantenservice</li>"
       },
       "enterprise-subscription": {
         "title": "Enterprise",
-        "description": "Samenwerken als nooit tevoren"
+        "description": "Samenwerken als nooit tevoren",
+        "features": "<li><bold>Onbeperkt</bold> gebruikers</li><li><bold>Onbeperkt</bold> runtime</li><li><bold>Onbeperkt</bold> Workflows</li><li><bold>1 TB</bold> opslag</li><li>API-toegang</li><li><bold>Toegewijde</bold> klantenservice</li><li><bold>Aangepast</bold> domein</li>"
       },
       "custom": {
         "title": "Op maat",
-        "description": "Speciaal afgestemd op jouw behoeften"
+        "description": "Speciaal afgestemd op jouw behoeften",
+        "features": "<li><bold>Volume-gebaseerde</bold> prijsstelling</li><li><bold>Onderhandelde</bold> voorwaarden</li><li><bold>Aangepaste</bold> plannen</li><li><bold>Onbeperkte</bold> opslag</li><li>Toegang tot <bold>alle</bold> functies</li><li><bold>Toegewijde</bold> accountmanager</li><li>Migratie-assistentie</li>"
       }
     }
   },
