@@ -7,7 +7,7 @@
     "testimonials": "Wat onze klanten zeggen"
   },
   "locale-switcher": {
-    "label": "Change language",
+    "label": "View localized prices",
     "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
   },
   "pricing": {

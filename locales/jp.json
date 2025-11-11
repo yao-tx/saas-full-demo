@@ -7,7 +7,7 @@
     "testimonials": "お客様の声"
   },
   "locale-switcher": {
-    "label": "言語を変更",
+    "label": "View localized prices",
     "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {不明}}"
   },
   "pricing": {

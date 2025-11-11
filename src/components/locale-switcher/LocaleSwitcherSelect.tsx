@@ -4,6 +4,8 @@ import { useParams } from "next/navigation";
 import { Locale } from "next-intl";
 import { ReactNode, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
+import { Label } from "@/components/ui/label";
 
 import {
   Select,
@@ -16,12 +18,14 @@ type Props = {
   children: ReactNode;
   defaultValue: string;
   label: string;
+  className?: string;
 };
 
 export const LocaleSwitcherSelect = ({
   children,
   defaultValue,
-  label
+  label,
+  className,
 }: Props) => {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -44,17 +48,24 @@ export const LocaleSwitcherSelect = ({
   }
 
   return (
-    <Select
-      defaultValue={defaultValue}
-      disabled={isPending}
-      onValueChange={(value: string) => onSelectChange(value)}
+    <div className={cn(
+      "flex gap-2",
+      className,
+    )}
     >
-      <SelectTrigger className="w-[180px]">
-        <SelectValue placeholder="Language" />
-      </SelectTrigger>
-      <SelectContent>
-        {children}
-      </SelectContent>
-    </Select>
+      <Label className="font-bold">{label}</Label>
+      <Select
+        defaultValue={defaultValue}
+        disabled={isPending}
+        onValueChange={(value: string) => onSelectChange(value)}
+      >
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="Language" />
+        </SelectTrigger>
+        <SelectContent>
+          {children}
+        </SelectContent>
+      </Select>
+    </div>
   );
 }

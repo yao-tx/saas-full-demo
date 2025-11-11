@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 interface Pricing {
   "path": string;
@@ -117,9 +118,11 @@ export const PricingCards = () => {
                   <Button
                     className="w-full hover:cursor-pointer"
                     size="xl"
-                    onClick={() => handleClick(pricing.path)}
+                    asChild
                   >
-                    {t("start")}
+                    <Link href={`/checkout?plan=${pricing.path}`}>
+                      {t("start")}
+                    </Link>
                   </Button>
                 )
               }

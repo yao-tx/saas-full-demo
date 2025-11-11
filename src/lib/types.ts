@@ -101,6 +101,68 @@ export interface ProductData {
   variation: string;
 };
 
+export interface CallbackData {
+  allCrossSells: [];
+  availablePaymentMethods: [];
+  country: string;
+  coupons: [];
+  creationTime: number;
+  currency: string;
+  discountTotal: string;
+  discountTotalPercent: string;
+  discountTotalPercentValue: number;
+  discountTotalValue: number;
+  fields: {
+    fieldName: string;
+    required: boolean;
+    provided: boolean;
+  }[];
+  firstUpsellConfigurationDisplay: string;
+  gift: boolean;
+  groups: {
+    driver?: string; // storefront name
+    driverType: string; // usually returns "storefront" string
+    items: ProductData[];
+    required: boolean;
+    selectableAdditions: boolean;
+    selectableReplacements: boolean;
+    selectables: boolean;
+    selections: boolean;
+    type?: "add";
+  }[];
+  includesPhysicalGoods: boolean;
+  language: string;
+  messages: [];
+  modifiedSubscriptionDefaultQuantity: number;
+  modifiedSubscriptionId: string;
+  modifiedSubscriptionJson: string;
+  originalTotal: string;
+  originalTotalValue: number;
+  payments: [];
+  selections: boolean;
+  shippingCost: string;
+  shippingCostValue: number;
+  siteLevelFeatureFlags: {
+    "pix.updated.iof.verbiage": "true" | "false";
+    "updated.iof.verbiage": "true" | "false";
+  };
+  storeTaxPriceMode: "NET_PRICING" | "GROSS_PRICING";
+  subtotal: string;
+  subtotalValue: number;
+  tax: string;
+  taxExempt: boolean;
+  taxExemptionAllowed: boolean;
+  taxExemptionIdApplied: boolean;
+  taxPriceType: "added" | "included";
+  taxRate: string;
+  taxType: string;
+  taxValue: number;
+  total: string;
+  totalValue: number;
+  totalWithTax: string;
+  totalWithTaxValue: number;
+};
+
 export interface Account {
   id: string;
   account: string;

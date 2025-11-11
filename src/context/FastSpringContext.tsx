@@ -66,6 +66,7 @@ export const FastSpringProvider = ({
     };
 
     window.fastSpringCallBack = (fsData: any) => {
+      console.log(fsData);
       if (fsData?.groups) {
         const newProducts = fsData.groups
           .filter((group: any) => Array.isArray(group.items))
