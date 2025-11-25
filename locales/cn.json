@@ -7,8 +7,8 @@
     "testimonials": "客户评价"
   },
   "locale-switcher": {
-    "label": "View localized prices",
-    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
+    "label": "查看本地价格",
+    "locale": "{locale, select, jp {🇯🇵 ¥ JPY} en {🇺🇸 $ USD} cn {🇨🇳 ¥ CNY} nl {🇳🇱 € EUR} other {Unknown}}"
   },
   "pricing": {
     "heading": "解锁<automation>自动化</automation>的强大力量",

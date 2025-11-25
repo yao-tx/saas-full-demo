@@ -8,7 +8,7 @@
   },
   "locale-switcher": {
     "label": "View localized prices",
-    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {Unknown}}"
+    "locale": "{locale, select, jp {🇯🇵 ¥ JPY} en {🇺🇸 $ USD} cn {🇨🇳 ¥ CNY} nl {🇳🇱 € EUR} other {Unknown}}"
   },
   "pricing": {
     "heading": "Unleash the power of <automation>automation</automation>",

@@ -18,8 +18,6 @@ export default async function AccountPage({ params }: Props) {
     notFound();
   }
 
-  const simulateDelay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
   const credentials = btoa(`${process.env.FASTSPRING_API_USERNAME}:${process.env.FASTSPRING_API_PASSWORD}`);
 
   const userData: Account = await fetch(`${process.env.FASTSPRING_API_URL}/accounts/${id}`, {
@@ -34,9 +32,7 @@ export default async function AccountPage({ params }: Props) {
     notFound();
   }
 
-  console.log(userData);
-
-  const test = await fetch(`${process.env.FASTSPRING_API_URL}/subscriptions/${userData.subscriptions[0]}`, {
+  const subscriptionData = await fetch(`${process.env.FASTSPRING_API_URL}/subscriptions/${userData.subscriptions[0]}`, {
     method: "GET",
     headers: {
       "Authorization": `Basic ${credentials}`,
@@ -44,35 +40,31 @@ export default async function AccountPage({ params }: Props) {
     }
   }).then((res) => res.json());
 
-  console.log(test);
-
-  const zzz = await fetch(`${process.env.FASTSPRING_API_URL}/accounts/${id}/authenticate`, {
+  const authenticatedAccountData = await fetch(`${process.env.FASTSPRING_API_URL}/accounts/${id}/authenticate`, {
     method: "GET",
     headers: {
       "Authorization": `Basic ${credentials}`,
       "Content-Type": "application/json",
     }
   }).then((res) => res.json());
-
-  console.log(zzz?.accounts?.[0].url);
 
   return (
-    <div className="m-4 md:grids-col-2 grid **:data-[slot=card]:shadow-none md:gap-4 lg:grid-cols-10 xl:grid-cols-11">
+    <div className="m-4 md:grid-col-2 grid **:data-[slot=card]:shadow-none gap-4 lg:grid-cols-10 xl:grid-cols-11">
       <div className="grid gap-4 lg:col-span-4 xl:col-span-6">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-          <div className="flex flex-col gap-4">
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
+          <div className="flex flex-col gap-4 min-w-0">
             <AccountInformationCard contact={userData.contact} />
             <EmbeddedPaymentMangementComponentCard
-              accountManagementPortalLink={zzz?.accounts?.[0].url}
-              subscriptionID={test.id}
+              accountManagementPortalLink={authenticatedAccountData?.accounts?.[0].url}
+              subscriptionID={subscriptionData.id}
             />
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 min-w-0">
             <UserProfileCard userData={userData} />
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 lg:col-span-6 xl:col-span-5">
+      <div className="w-full max-w-full flex flex-col gap-4 lg:col-span-6 xl:col-span-5 min-w-0">
         <TransactionsCard charges={userData.charges} />
       </div>
     </div>

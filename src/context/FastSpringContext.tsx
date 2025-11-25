@@ -9,11 +9,13 @@ import React, {
 } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import type { ProductData } from "@/lib/types";
+import type { ProductData, CallbackData } from "@/lib/types";
 
 interface FastSpringContextType {
   products: { [key: string]: ProductData };
-  setProducts: (products: { [key: string]: ProductData }) => void;
+  setProducts: React.Dispatch<React.SetStateAction<{ [key: string]: ProductData }>>;
+  callbackData: CallbackData | undefined;
+  setCallbackData: React.Dispatch<React.SetStateAction<CallbackData | undefined>>;
 };
 
 const FastSpringContext = createContext<FastSpringContextType | undefined>(undefined);
@@ -37,6 +39,14 @@ export const FastSpringProvider = ({
 }) => {
   const pathname = usePathname();
   const [products, setProducts] = useState<{ [key: string]: ProductData }>({});
+  const [callbackData, setCallbackData] = useState<CallbackData | undefined>(undefined);
+
+  const contextValue = {
+    products,
+    setProducts,
+    callbackData,
+    setCallbackData,
+  };
 
   const removeFSPopup = () => {
     const overlay = document.getElementById("fastspring-overlay");
@@ -66,7 +76,8 @@ export const FastSpringProvider = ({
     };
 
     window.fastSpringCallBack = (fsData: any) => {
-      console.log(fsData);
+      setCallbackData(fsData);
+
       if (fsData?.groups) {
         const newProducts = fsData.groups
           .filter((group: any) => Array.isArray(group.items))
@@ -100,9 +111,9 @@ export const FastSpringProvider = ({
         data-data-callback="fastSpringCallBack"
         data-popup-webhook-received="onFSPopupClosed"
         data-access-key={process.env.NEXT_PUBLIC_FASTSPRING_DATA_ACCESS_KEY}
-        data-continuous="true"
+        // data-continuous="true"
       />
-      <FastSpringContext.Provider value={{ products, setProducts }}>
+      <FastSpringContext.Provider value={contextValue}>
         {children}
       </FastSpringContext.Provider>
     </>

@@ -7,8 +7,8 @@
     "testimonials": "お客様の声"
   },
   "locale-switcher": {
-    "label": "View localized prices",
-    "locale": "{locale, select, jp {🇯🇵 日本語} en {🇺🇸 English} cn {🇨🇳 简体中文} nl {🇳🇱 Nederlands} other {不明}}"
+    "label": "地域別の価格を表示",
+    "locale": "{locale, select, jp {🇯🇵 ¥ JPY} en {🇺🇸 $ USD} cn {🇨🇳 ¥ CNY} nl {🇳🇱 € EUR} other {Unknown}}"
   },
   "pricing": {
     "heading": "<automation>自動化</automation>の力を、今すぐ手に入れよう",

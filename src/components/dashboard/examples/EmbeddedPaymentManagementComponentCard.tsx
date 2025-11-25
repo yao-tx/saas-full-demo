@@ -29,7 +29,7 @@ export function EmbeddedPaymentMangementComponentCard({
           <CardDescription>View and update your saved payment methods.</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-6">
-          <Button onClick={() => triggerEPM()}>Trigger</Button>
+          <Button onClick={() => triggerEPM()}>View Payment Methods</Button>
         </CardContent>
       </Card>
     </>

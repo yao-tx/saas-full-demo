@@ -36,10 +36,12 @@ export default async function RootLayout({
           className="bg-sidebar"
         >
           <AccountSidebar />
-          <SidebarInset  className="bg-background rounded-xl m-3 shadow-sm">
-            <Header />
-            {children}
-          </SidebarInset>
+          <div className="p-3 w-full relative">
+            <SidebarInset  className="bg-background h-full rounded-xl shadow-sm">
+              <Header />
+              {children}
+            </SidebarInset>
+          </div>
         </SidebarProvider>
         <Toaster />
       </body>

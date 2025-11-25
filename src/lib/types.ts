@@ -120,7 +120,7 @@ export interface CallbackData {
   firstUpsellConfigurationDisplay: string;
   gift: boolean;
   groups: {
-    driver?: string; // storefront name
+    driver?: string;
     driverType: string; // usually returns "storefront" string
     items: ProductData[];
     required: boolean;
