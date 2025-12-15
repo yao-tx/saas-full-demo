@@ -1,6 +1,6 @@
 "use client"
 
-import type { AccountCharge } from "@/lib/types";
+import type { AccountCharge } from "@/types/fs-callback";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

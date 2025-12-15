@@ -9,7 +9,7 @@ import React, {
 } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import type { ProductData, CallbackData } from "@/lib/types";
+import type { ProductData, CallbackData } from "@/types/fs-callback";
 
 interface FastSpringContextType {
   products: { [key: string]: ProductData };

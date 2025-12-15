@@ -1,4 +1,4 @@
-import type { Account } from "@/lib/types";
+import type { Account } from "@/types/fs-callback";
 import { notFound } from "next/navigation";
 import { AccountInformationCard } from "@/components/dashboard/examples/AccountInformationCard";
 import { TransactionsCard } from "@/components/dashboard/examples/TransactionsCard";

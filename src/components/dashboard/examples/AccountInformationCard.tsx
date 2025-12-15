@@ -1,6 +1,6 @@
 "use client"
 
-import type { AccountContact } from "@/lib/types";
+import type { AccountContact } from "@/types/fs-callback";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

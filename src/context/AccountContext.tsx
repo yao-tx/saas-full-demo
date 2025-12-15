@@ -2,7 +2,7 @@
 
 import { createContext, useContext } from "react";
 
-import type { Account } from "@/lib/types";
+import type { Account } from "@/types/fs-callback";
 
 export const AccountDataContext = createContext<Account | null>(null);
 
